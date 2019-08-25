@@ -47,7 +47,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 12px;
-  border-bottom: 1px solid #fdfdfd;
+  border-bottom: 1px solid rgb(253, 253, 253);
   font-family: "Raleway Semi-Bold", sans-serif;
   font-size: 50px;
   font-weight: 700;
@@ -305,4 +305,5 @@ body {
 
 .span--block {
   display: block;
+  line-height: .5;
 }
