@@ -1,0 +1,308 @@
+body {
+  margin: 0;
+  /* overflow-x: hidden; hide horizontal scrollbar.
+  When the browser window is smaller than the width of the element,
+  the browser then adds a horizontal scrollbar to the page.*/
+  overflow-x: hidden;
+}
+/********************//********************/
+.first-screen-header {
+  position: relative;
+  height: 100vh;
+  /* Самонапоминание :D min-height is needed for .button-scroll correct vertical positioning in a small window */
+  min-height: 480px;
+  background-image: url(../images/vinyl_record_player.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.first-screen-header__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(31, 49, 53, .7);
+}
+
+.header-content-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-logo {
+  /* max-width for cuttin letter-spacing of last symbol in second-inner block */
+  max-width: 197px;
+  padding: 20px 107px;
+  border: 3px solid rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
+}
+
+.header-logo__title {
+  /* h1 has default margin top and bottom not equal to 0*/
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #fdfdfd;
+  font-family: "Raleway Semi-Bold", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+.header-logo__subtitle {
+  /* h2 has default margin top and bottom not equal to 0*/
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  font-family: "Roboto";
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 13px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+@font-face{
+  font-family: "Georgia";
+  src: url(../fonts/Georgia/9605.ttf);
+}
+
+.header-text {
+  max-width: 327px;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  font-family: "Georgia Italic";
+  font-size: 18px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 26px;
+  color: rgb(255, 255, 255);
+}
+
+.button-scroll {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+/********************//********************/
+.navigation {
+  padding-top: 27px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navigation__container {
+  position: relative;
+  max-width: 970px;
+  max-height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation__site-logo {
+  display: inline-block;
+  margin-right: 900px;
+  font-family: "Raleway Extra-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: .9;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.navigation__site-logo > a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+.button-menu {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  /* display: inline-block; */
+  padding: 0;
+  border: 0;
+  background: none;
+}
+/********************//********************/
+.main-text {
+  padding-top: 127px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 65px;
+}
+
+.main-text__container {
+  max-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0;
+}
+
+.main-text__quote {
+  display: inline-block;
+  padding-top: 20px;
+  margin-right: 110px;
+  /* т.к. inline-block, то если задать width:100%;
+  он будет растягиваться не от своего содержимого,
+  а в зависимости от ширины своего родителя.*/
+  width: 100%;
+  max-width: 302px;
+  font-family: "Raleway Semi-Bold", sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  word-break: break-all;
+  text-align: left;
+  border-top: 3px solid rgb(51, 51, 51);
+}
+
+.main-text__greeting-text {
+  display: inline-block;
+  /* vertical-align: top; */
+  max-width: 556px;
+  font-family: "Georgia Italic";
+  font-size: 19px;
+  font-style: italic;
+  line-height: 26px;
+  text-align: justify;
+  color: rgb(51, 51, 51);
+}
+
+.main-text__image-container {
+  max-width: 970px;
+  margin-top: 90px;
+}
+
+.main-text__studio-shot {
+  width: 100%;
+}
+ /********************//********************/
+.paragraph--zero-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-text__greeting-text > p:last-child,
+.story-about__text > p:last-child {
+  margin-bottom: 0;
+}
+/********************//********************/
+.story-about {
+  padding-top: 65px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 95px;
+  background-color: rgb(31, 49, 53);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.story-about__headline {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Raleway Semi-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.story-about__headline::before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top: 22px;
+  right: 65px;
+  width: 52px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+}
+
+.story-about__headline::after {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top: 22px;
+  left: 65px;
+  width: 52px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+}
+
+.story-about__container {
+  max-width: 626px;
+  margin-top: 68px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.story-about__text {
+  font-size: 18px;
+  font-family: "Georgia Italic";
+  font-style: italic;
+  line-height: 1.4;
+}
+/********************//********************/
+.footer-base {
+  position: relative;
+  padding-top: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 60px;
+}
+
+.footer-base__img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.footer-base__blockquote {
+  margin: 0;
+  text-align: center;
+}
+
+.footer-base__blockquote > q {
+  font-family: "Georgia Italic";
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+  color: rgb(51, 51, 51);
+}
+
+.footer-base__blockquote > cite {
+  font-family: "Raleway Semi-Bold", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(51, 51, 51, .5);
+}
+
+.span--block {
+  display: block;
+}
